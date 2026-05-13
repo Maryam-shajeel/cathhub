@@ -1,13 +1,12 @@
-/* ---------- RESET & GLOBAL ---------- */
 * {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     /* box-sizing: border-box; */
 }
 
 body {
     background: #ffffff;
-    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: arial;
     line-height: 1.4;
     color: #111827;
     scroll-behavior: smooth;
@@ -17,10 +16,8 @@ body {
 .page {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 50px;
+    padding-left: 20px;
 }
-
-
 
 /* store badge transition */
 .store-badge {
@@ -104,15 +101,18 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    margin-bottom: 5rem;
+    margin-bottom: 10px;
     background: #ffffff;
-    border-radius: 40px;
-    padding: 0.5rem 0;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .section-media {
     flex: 1 1 45%;
+    gap: 5px;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .section-media img {
@@ -122,39 +122,86 @@ body {
 
 .section-copy {
     flex: 1 1 45%;
-    padding: 0 1rem;
+    padding: 20px;
 }
 
-.section-messages {
-    flex-direction: row-reverse;
-    padding-left: 50px;
+/* Parent container */
+.section-channels {
+    padding-left: 0px;
+    padding-right: 20px;
 }
 
-.section-channels h1 {
-    font-size: 50px;
-}
-
-.section-copy h2 {
-    font-size: 40px;
-    color: rgb(18, 16, 16);
+/* Heading inside section-channels */
+.section-channels h2 {
+    font-size: 30px;
+    font-style: normal;
+    color: rgb(73, 68, 68);
     letter-spacing: 6px;
     margin-bottom: 10px;
-    padding-left: 30px;
+    padding-left: 90px;
+    padding-right: 30px;
+}
+
+/* Paragraph inside section-channels */
+.section-channels p {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #6f7072;
+    /* max-width: 100%; */
+}
+
+/* Image inside section-channels */
+.section-channels img {
+    text-align: center;
+    padding-left: 10px;
+}
+
+.section-channels img {
+    width: 600px;
+    height: 600px;
+}
+
+
+.section.section-messages {
+    flex-direction: row-reverse;
+    gap: 0px;
+    padding-left: 170px;
+    padding-right: 70px;
+    margin-left: 0px;
+}
+
+.section.section-messages .section-copy,
+.section.section-messages .section-media {
+    flex: 1 1 5%;
+    /* or whatever smaller value you want */
+}
+
+.section-future {
+    padding: 20px;
+}
+
+
+.section-copy h2 {
+    font-size: 30px;
+    font-style: normal;
+    color: rgb(73, 68, 68);
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+    padding-left: 50px;
     padding-right: 30px;
 }
 
 .section-copy p {
-    font-size: 40.5px;
+    font-size: 30px;
     line-height: 1.5;
-    color: #515355;
-    max-width: 90%;
+    color: #6f7072;
 }
 
 /* specific text adjustments */
 .section-channels .section-copy p,
 .section-messages .section-copy p,
 .section-future .section-copy p {
-    color: #363638;
+    color: #737375;
 }
 
 /* FOOTER STYLES  */
