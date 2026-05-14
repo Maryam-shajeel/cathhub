@@ -15,7 +15,7 @@ body {
 .page {
     max-width: 1280px;
     margin: 0 auto;
-    padding-left: 20px;
+    padding-left: 70px;
 }
 
 /* store badge transition */
@@ -33,16 +33,14 @@ body {
 /*  HERO SECTION  */
 .hero {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    gap: 2px;
-    margin-bottom: 4px;
-    padding: 1px 0 2px;
+    gap: 0px;
 }
 
 .hero-copy {
-    flex: 1 1 45%;
+    flex: 1 1 50%;
     text-align: left;
     gap: 20px;
 
@@ -50,34 +48,41 @@ body {
 
 .hero-logo {
     width: 400px;
-    padding-top: 30px;
-    padding-left: 40px;
-    display: block;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-left: 40px;
 }
 
 .hero-heading {
     font-size: 30px;
     font-style: arial;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     line-height: 1.29;
-
+    white-space: nowrap;
+    margin-top: -10px;
+    margin-left: -50px;
 }
 
 .hero-subtext {
     font-size: 30px;
     color: #58595b;
-    padding-left: 60px;
+    margin: 0 0 12px;
+    letter-spacing: 1.3px;
+    white-space: nowrap;
+
+
 }
 
 .store-links {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
+    margin-left: -30px;
+    margin-top: 70px;
 }
 
 .store-links img {
-    margin-top: 70px;
-    width: 200px;
+    width: 250px;
     cursor: pointer;
     transition: filter 0.2s;
 }
@@ -145,8 +150,8 @@ body {
 .section-channels p {
     font-size: 40px;
     width: 200%;
-    font-family: Microsoft JhengHei UI Light;
-    line-height: 1.5;
+    font-family: Microsoft YaHei Light;
+    line-height: 1.4;
     color: #6f7072;
 }
 
@@ -207,8 +212,8 @@ body {
 
 .section-copy p {
     font-size: 40px;
-    font-family: Microsoft JhengHei UI Light;
-    line-height: 1.5;
+    font-family: Microsoft YaHei Light;
+    line-height: 1.4;
     color: #6f7072;
 }
 
@@ -252,21 +257,23 @@ body {
     font-family: arial;
     font-size: 30px;
     font-weight: 100px;
-    color: #010508;
+    color: #28292a;
     margin-bottom: 20px;
+    margin-left: -140px;
 }
 
 .footer-links {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 1.8rem;
+    gap: 10px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
+    margin-left: -140px;
 }
 
 .footer-links img {
     height: auto;
-    width: 200px;
+    width: 250px;
     transition: transform 0.2s;
 }
 
@@ -275,9 +282,13 @@ body {
 }
 
 .footer-contact {
-    font-size: 20.68px;
-    margin-bottom: 20px;
-    color: #2d3e50;
+    font-size: 30px;
+    font-weight: 10;
+    letter-spacing: 1.6;
+    margin-bottom: 50px;
+    margin-left: -140px;
+    padding-bottom: 10px;
+    color: #656768;
 }
 
 .footer-contact a {
@@ -287,12 +298,13 @@ body {
 }
 
 .footer-contact a:hover {
-    border-bottom-color: #2563eb;
+    border-bottom-color: #05080d;
 }
 
 .footer-logo {
-    width: 100px;
+    width: 150px;
     margin-top: 10px;
+    margin-left: -140px;
     opacity: 0.85;
     transition: opacity 0.2s;
     display: inline-block;
